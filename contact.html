@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<!---
+Name: Jaden Moler
+Date created: 10/8/19
+Last revised: 10/8/19
+--->
+
+<html>
+    <head>
+            <title>Contact Us</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Restaurant Name</h1>
+            <hr />
+        </header>
+        
+        <nav>
+            <a href = "index.html">Home</a>
+            <a href = "menu.html">Menu</a>
+            <a href = "contact.html">Contact Us</a>
+            <hr />
+        </nav>
+        
+        <!--- This section is used for form submission --->
+        <section>
+            <center>
+            <form action = "submit.html" method="post">
+                <label for = "firstName">Name:</label>
+                <input type = "text" id = "firstName" name = "firstName">
+            </form>
+            
+            <br />
+            <form action="submit.html" method="post">
+                <label for = "emailInput">Email:</label>
+                <input type = "text" id = "lastName" name = "emailInput">
+            </form>
+            
+             <br />
+             <form action="submit.html" method="post">
+                <label for = "phoneInput">Phone:</label>
+                <input type = "text" id = "phoneInput" name = "phoneInput">
+            </form>
+            
+            <br />
+            <form action="submit.html" method="post">
+                <label for = "inquiry">Reason for Inquiry: </label>
+                <select id = "inquiry" name = "inquiry">
+                    <option value = "catering" selected>Catering</option>
+                    <option value = "party">Private Party</option>
+                    <option value = "feedback">Feedback</option>
+                    <option value = "other">Other</option>
+                </select>
+            </form>
+            
+            <br />
+            <form action = "submit.html" method="post">
+                <label for = "info">Additional Information:</label>
+                <textarea id = "info" name = "info"></textarea>
+            </form>
+            
+            <br />
+            <form action="submit.html" method = "post">
+                Have you been to the restaurant?
+                
+                <label for = "no">No</label>
+                <input type="radio" id = "no" name = "vistied" value = "No" checked>
+                
+                <label for = "yes">Yes</label>
+                <input type="radio" id = "yes" name = "vistied" value = "Yes">
+            </form>
+            
+            <br />
+            <form action = "submit.html" method="post">
+                Best days to contact you:
+                
+                <input type = "checkbox" id = "monday" name = "weekday" value = "M">
+                <label for = "monday">M</label>
+                
+                <input type = "checkbox" id = "tuesday" name = "weekday" value = "T">
+                <label for = "tuesday">T</label>
+                
+                <input type = "checkbox" id = "wednesday" name = "weekday" value = "W">
+                <label for = "wednesday">W</label>
+                
+                <input type = "checkbox" id = "thursday" name = "weekday" value = "Th">
+                <label for = "thursday">Th</label>
+                
+                <input type = "checkbox" id = "friday" name = "weekday" value = "F">
+                <label for = "friday">F</label>
+            </form>
+            
+            <br />
+            <form action="submit.html" method="post">
+                <input type = "submit" id = "submit" value="Submit Request">
+            </form>
+            </center>
+        </section>
+        
+         <footer>
+            <hr />
+            <p>
+                <center>
+                    Street, City, State, Zipcode
+                    <br />
+                    Telephone number
+                </center>
+            </p>
+        </footer>
+        
+    </body>
+</html>

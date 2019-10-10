@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!---
+Name: Jaden Moler
+Date created: 10/8/19
+Last revised: 10/8/19
+--->
+
+<html>
+    <head>
+            <title></title>
+    </head>
+
+    <body>
+        <header>
+            <h1></h1>
+            <hr />
+        </header>
+        
+        <nav>
+            <a href = "index.html">Home</a>
+            <a href = "Menu.html">Menu</a>
+            <a href = "Contact.html">Contact Us</a>
+            <hr />
+        </nav>
+        
+        <section>
+            
+        </section>
+        
+         <footer>
+            <hr />
+            <p>
+            <center>Street, City, State, Zipcode<br />
+            Telephone number</center>
+            </p>
+        </footer>
+        
+    </body>
+</html>

@@ -3,50 +3,72 @@
 <!---
 Name: Jaden Moler
 Date created: 10/8/19
-Last revised: 10/8/19
+Last revised: 10/10/19
 --->
 
 <html>
     <head>
-            <title>Contact Us</title>
+        <title>Contact Us</title>
+        <link href = "styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        
+        <style>
+            .required
+            {
+                font-weight: bold;
+            }
+            
+            #name
+            {
+                margin-top: 30px;
+            }
+            
+            section
+            {
+                color: red
+            }
+            
+            form
+            {
+                text-align: center;
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>Restaurant Name</h1>
-            <hr />
+            <h1>Red Laguna</h1>
         </header>
         
         <nav>
             <a href = "index.html">Home</a>
             <a href = "menu.html">Menu</a>
             <a href = "contact.html">Contact Us</a>
-            <hr />
         </nav>
         
         <!--- This section is used for form submission --->
         <section>
-            <center>
             <form action = "submit.html" method="post">
-                <label for = "firstName">Name:</label>
-                <input type = "text" id = "firstName" name = "firstName">
+                <label for = "name" class = "required" >Name:</label>
+                <input type = "text" id = "name" name = "required">
             </form>
             
             <br />
             <form action="submit.html" method="post">
-                <label for = "emailInput">Email:</label>
-                <input type = "text" id = "lastName" name = "emailInput">
+                <label for = "emailInput" class = "required">Email:</label>
+                <input type = "text" id = "email">
             </form>
             
              <br />
              <form action="submit.html" method="post">
-                <label for = "phoneInput">Phone:</label>
-                <input type = "text" id = "phoneInput" name = "phoneInput">
+                <label for = "phoneInput" class = "required">Phone:</label>
+                <input type = "text" id = "phoneInput">
             </form>
             
             <br />
             <form action="submit.html" method="post">
-                <label for = "inquiry">Reason for Inquiry: </label>
+                <label for = "inquiry" class = "required" >Reason for Inquiry: </label>
                 <select id = "inquiry" name = "inquiry">
                     <option value = "catering" selected>Catering</option>
                     <option value = "party">Private Party</option>
@@ -62,7 +84,7 @@ Last revised: 10/8/19
             </form>
             
             <br />
-            <form action="submit.html" method = "post">
+            <form action="submit.html" method = "post" class = "required">
                 Have you been to the restaurant?
                 
                 <label for = "no">No</label>
@@ -77,37 +99,32 @@ Last revised: 10/8/19
                 Best days to contact you:
                 
                 <input type = "checkbox" id = "monday" name = "weekday" value = "M">
-                <label for = "monday">M</label>
+                <label for = "monday" class = "checkboxes">M</label>
                 
                 <input type = "checkbox" id = "tuesday" name = "weekday" value = "T">
-                <label for = "tuesday">T</label>
+                <label for = "tuesday" class = "checkboxes">T</label>
                 
                 <input type = "checkbox" id = "wednesday" name = "weekday" value = "W">
-                <label for = "wednesday">W</label>
+                <label for = "wednesday" class = "checkboxes">W</label>
                 
                 <input type = "checkbox" id = "thursday" name = "weekday" value = "Th">
-                <label for = "thursday">Th</label>
+                <label for = "thursday" class = "checkboxes">Th</label>
                 
                 <input type = "checkbox" id = "friday" name = "weekday" value = "F">
-                <label for = "friday">F</label>
+                <label for = "friday" class = "checkboxes">F</label>
             </form>
             
             <br />
             <form action="submit.html" method="post">
                 <input type = "submit" id = "submit" value="Submit Request">
             </form>
-            </center>
         </section>
         
          <footer>
-            <hr />
-            <p>
-                <center>
-                    Street, City, State, Zipcode
-                    <br />
-                    Telephone number
-                </center>
-            </p>
+                Street, City, State, Zipcode
+                <br />
+                <br />
+                Telephone number
         </footer>
         
     </body>

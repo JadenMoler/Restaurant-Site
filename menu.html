@@ -3,25 +3,46 @@
 <!---
 Name: Jaden Moler
 Date created: 10/8/19
-Last revised: 10/8/19
+Last revised: 10/10/19
 --->
 
 <html>
     <head>
-            <title>Menu</title>
+        <title>Menu</title>
+        <link href = "styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            body
+            {
+                color: red;
+            }
+            
+            article
+            {
+                width: 250px;
+                text-align: center;
+            }
+            
+            table, tr, td
+            {
+                text-align: left;
+                margin: 0 auto;
+                width: 400px;
+                border: 2px solid black;
+                border-collapse: collapse
+            }
+            
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>Restaurant name</h1>
-            <hr />
+            <h1>Red Laguna</h1>
         </header>
         
         <nav>
             <a href = "index.html">Home</a>
             <a href = "menu.html">Menu</a>
             <a href = "contact.html">Contact Us</a>
-            <hr />
         </nav>
         
         <!--- This section is used to describe menu items --->
@@ -112,17 +133,40 @@ Last revised: 10/8/19
                 </p>
             </article>
             
+            <table>
+                <thead>
+                    <tr>
+                        <th>Beverages</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Root beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table> 
         </section>
         
         <footer>
-            <hr />
-            <p>
-                <center>
-                    Street, City, State, Zipcode
-                    <br />
-                    Telephone number
-                </center>
-            </p>
+                Street, City, State, Zipcode
+                <br />
+                <br />
+                Telephone number
         </footer>
     </body>
 </html>

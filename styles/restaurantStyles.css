@@ -1,0 +1,60 @@
+/*
+Name: Jaden Moler
+Date created: 10/8/19
+Last revised: 10/10/19
+*/
+
+header, footer
+{
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+
+header
+{
+    font-family: georgia;
+}
+
+a:hover
+{
+    font-weight: bold;
+}
+
+a:active
+{
+    text-decoration: underline;
+}
+
+a:visited
+{
+    color: goldenrod;
+}
+
+nav
+{
+    padding: 10px;
+    background-color: black;
+    border-bottom: solid red;
+    border-top: solid red
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2C221A;
+    margin: 0px;
+}
+
+footer
+{
+    border-top: solid red;
+    margin-top: auto;
+}
+
+a
+{
+    margin: 15px;
+}

@@ -8,8 +8,14 @@ Last revised: 10/10/19
 
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <title>Menu</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
         <link href = "styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        
         <style>
             body
             {
@@ -18,8 +24,8 @@ Last revised: 10/10/19
             
             article
             {
-                width: 250px;
                 text-align: center;
+                font-size: 20px
             }
             
             table, tr, td
@@ -29,6 +35,12 @@ Last revised: 10/10/19
                 width: 400px;
                 border: 2px solid black;
                 border-collapse: collapse
+            }
+            
+            span
+            {
+                font-size: 22px;
+                font-weight: bold;
             }
             
         </style>
@@ -46,127 +58,170 @@ Last revised: 10/10/19
         </nav>
         
         <!--- This section is used to describe menu items --->
-        <section>
-            <article id = "burgersAndFries">
-                <p>
-                    <strong>Burger and Fries</strong>
-                    <br />
-                    An American Classic!
-                    <br />
-                    Your choice - with or without cheese 
-                    Pickle, onion, tomato and lettuce 
-                    Servered with our famous thick cut french fries
-                    <br />
-                    $7.95
-                </p>
-            </article>
-            
-            <article id = "hotDogAndChips">
-                <p>
-                    <strong>Hot dog and Chips</strong>
-                    <br />
-                    A Summer Classic!
-                    <br />
-                    Your choice - white or wheat bun
-                    Relish mustard and ketchup 
-                    Servered with out house-made chips
-                    <br />
-                    $7.95
-                </p>
-            </article>
-            
-            <article id = "italianSausageAndPeppers">
-                <p>
-                    <strong>Italian Sasuage and Peppers</strong>
-                    <br />
-                    An All-Time Favorite!
-                    <br />
-                    Your choice - mild or spicy Cole Slaw
-                    Served with garlic mashers
-                    <br />
-                    $10.95
-                </p>
-            </article>
-            
-            <article id = "tenderloinSandwhichAndChips">
-                <p>
-                    <strong>Tenderloin Sandwhich and Chips</strong>
-                    <br />
-                    Really Hits The Spot!
-                    <br />
-                    Plain or Sesame Seed Bun
-                    Pickle, onion tomato, and lettuce
-                    Served with our house-made chips
-                    <br />
-                    $8.95
-                </p>
-            </article>
-            
-            <article id = "houseSalad">
-                <p>
-                    <strong>House Salad</strong>
-                    <br />
-                    On the Lighter Side
-                    <br />
-                    Your choice - with or without cheese
-                    Iceburg lettuce, tomatoes, peppers
-                    Thousand Island or Ranch
-                    Dressing Served with a dinner roll
-                    <br />
-                    $6.95
-                </p>
-            </article>
-            
-            <article id = "brisketSandwhichAndFries">
-                <p>
-                    <strong>Brisket Sandwhich and Fries</strong>
-                    <br />
-                    A Taste of Texas!
-                    <br />
-                    Smoked Brisket on thick-cut
-                    Texas Toast
-                    Cole Slaw
-                    Served with  our famous thick-cut
-                    french fries
-                    <br />
-                    $7.95
-                </p>
-            </article>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Beverages</th>
-                        <th></th>
-                    </tr>
-                </thead>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-4">
+                        <article id = "burgersAndFries">
+                            <p>
+                                <span class = "title">Burger and Fries</span>
+                                <br />
+                                An American Classic!
+                                <br />
+                                Your choice - with or without cheese
+                                <br />
+                                Pickle, onion, tomato and lettuce
+                                <br />
+                                Servered with our famous thick cut french fries
+                                <br />
+                                $7.95
+                            </p>
+                        </article>
+                        </div>
                 
-                <tbody>
-                    <tr>
-                        <td>Root beer</td>
-                        <td>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td>Bottled Water</td>
-                        <td>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>$1.25</td>
-                    </tr>
-                </tbody>
-            </table> 
-        </section>
+
+                 <div class = "col-lg-4">
+                        <article id = "hotDogAndChips">
+                            <p>
+                                <span class = "title">Hot dog and Chips</span>
+                                <br />
+                                A Summer Classic!
+                                <br />
+                                Your choice - white or wheat bun
+                                <br />
+                                Relish mustard and ketchup 
+                                <br />
+                                Servered with out house-made chips
+                                <br />
+                                $7.95
+                            </p>
+                        </article>
+                </div>
+                
+
+                 <div class = "col-lg-4">
+                        <article id = "italianSausageAndPeppers">
+                            <p>
+                                <span class = "title">Italian Sasuage and Peppers</span>
+                                <br />
+                                An All-Time Favorite!
+                                <br />
+                                Your choice - mild or spicy Cole Slaw
+                                <br />
+                                Served with garlic mashers
+                                <br />
+                                $10.95
+                            </p>
+                        </article>
+                </div>
+            </div>
+            
+            
+            <div class = "row">
+                <div class = "col-lg-4">
+                    <article id = "tenderloinSandwhichAndChips">
+                        <p>
+                            <span class = "title">Tenderloin Sandwhich and Chips</span>
+                            <br />
+                            Really Hits The Spot!
+                            <br />
+                            Plain or Sesame Seed Bun
+                            <br />
+                            Pickle, onion tomato, and lettuce
+                            <br />
+                            Served with our house-made chips
+                            <br />
+                            $8.95
+                        </p>
+                    </article>
+                </div>
+                
+                <div class = "col-lg-4">
+                    <article id = "houseSalad">
+                        <p>
+                            <span class = "title">House Salad</span>
+                            <br />
+                            On the Lighter Side
+                            <br />
+                            Your choice - with or without cheese
+                            <br />
+                            Iceburg lettuce, tomatoes, peppers
+                            <br />
+                            Thousand Island or Ranch
+                            <br />
+                            Dressing Served with a dinner roll
+                            <br />
+                            $6.95
+                        </p>
+                    </article>
+                </div>
+            
+                <div class = "col-lg-4">
+                    <article id = "brisketSandwhichAndFries">
+                        <p>
+                            <span class = "title">Brisket Sandwhich and Fries</span>
+                            <br />
+                            A Taste of Texas!
+                            <br />
+                            Smoked Brisket on thick-cut
+                            <br />
+                            Texas Toast
+                            <br />
+                            Cole Slaw
+                            <br />
+                            Served with  our famous thick-cut
+                            <br />
+                            french fries
+                            <br />
+                            $7.95
+                        </p>
+                    </article>
+                </div>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-lg-3"></div>
+                <div class = "col-lg-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Beverages</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>Root beer</td>
+                                <td>$3.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bottled Water</td>
+                                <td>$1.25</td>
+                            </tr>
+                            <tr>
+                                <td>Lemonade</td>
+                                <td>$1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Iced Tea</td>
+                                <td>$1.25</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class = "col-lg-6"></div>
+            </div>
+        </div>
         
         <footer>
                 Street, City, State, Zipcode
                 <br />
-                <br />
                 Telephone number
         </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
     </body>
 </html>

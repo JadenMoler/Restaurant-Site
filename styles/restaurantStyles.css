@@ -1,7 +1,7 @@
 /*
 Name: Jaden Moler
 Date created: 10/8/19
-Last revised: 10/10/19
+Last revised: 10/17/19
 */
 
 header, footer
@@ -37,6 +37,11 @@ nav
     background-color: black;
     border-bottom: solid red;
     border-top: solid red
+}
+
+nav .btn
+{
+    background-color: aliceblue;
 }
 
 body

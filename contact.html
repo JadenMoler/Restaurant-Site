@@ -3,7 +3,7 @@
 <!---
 Name: Jaden Moler
 Date created: 10/8/19
-Last revised: 10/18/19
+Last revised: 10/19/19
 --->
 
 <html>
@@ -48,16 +48,12 @@ Last revised: 10/18/19
                 text-align: center;
             }
             
-            .valid
+            .errorMessage
             {
-                visibility: hidden;
+                color: darkred;
+                text-align: center;
+                display: none;
             }
-            
-            .invalid
-            {
-               visibility: hidden;
-            }
-            
         </style>
     </head>
 
@@ -91,6 +87,9 @@ Last revised: 10/18/19
         <!--- This section is used for form submission --->
         <div class = "container">
         <section>
+            <p class = "errorMessage" id = "nameError">Entered name is invalid</p>
+            <p class = "errorMessage" id = "emailError">Entered email is invalid</p>
+            <p class = "errorMessage" id = "phoneError">Entered phone number is invalid</p>
             <form class = "needs-validation" novalidate>
                 <!---Name label and input--->
                 <div class = "form-group row">
@@ -195,9 +194,9 @@ Last revised: 10/18/19
         </div>
         
          <footer>
-                Street, City, State, Zipcode
+                1342 Arcadia Street, Palchen, Washington, 55334
                 <br />
-                Telephone number
+                206-871-9687
         </footer>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -208,9 +207,8 @@ Last revised: 10/18/19
         Validate the three required inputs that have user input: Name, email and phone number.
         Use regex to check formating and input and validate after user clicks off input.
         
-        If it matches the regex change text green, 
-        if it does not match then turn red and 
-        default back to black if empty.
+        If input does not match regex then display error message at top of body, below the carousel.
+        Default back to black if empty.
         --->
         <script>
           window.onload = function()
@@ -219,55 +217,43 @@ Last revised: 10/18/19
               var email = document.getElementById("email");
               var phone = document.getElementById("phone");
               
-              var nameFormat = /^[a-zA-Z]*$/;
+              var nameFormat = /^[a-zA-Z ]*$/;
               var emailFormat = /\S+@\S+\.\S+/;
               var phoneFormat = /^\d{3}\d{3}\d{4}$/;
               
               name.onchange = function()
               {
-                  if(nameFormat.test(name.value) && (name.value).length >= 1)
+                  if(!nameFormat.test(name.value) && (name.value).length >= 1)
                       {
-                          nameLabel.style.color = "green";
-                      }
-                  else if(!nameFormat.test(name.value) && (name.value).length >= 1)
-                      {
-                          nameLabel.style.color = "red";
+                          nameError.style.display = "block";
                       }
                   else
                   {
-                      nameLabel.style.color = "black";
+                      nameError.style.display = "none";
                   }
               }
               
               email.onchange = function()
               {
-                  if(emailFormat.test(email.value) && (email.value).length >= 1)
+                  if(!emailFormat.test(email.value) && (email.value).length >= 1)
                       {
-                          emailLabel.style.color = "green";
-                      }
-                  else if(!emailFormat.test(email.value) && (email.value).length >= 1)
-                      {
-                          emailLabel.style.color = "red";
+                          emailError.style.display = "block";
                       }
                   else
                   {
-                      emailLabel.style.color = "black";
+                      emailError.style.display = "none";
                   }
               }
               
               phone.onchange = function()
               {
-                  if(phoneFormat.test(phone.value) && (phone.value).length >= 1)
+                  if(!phoneFormat.test(phone.value) && (phone.value).length >= 1)
                       {
-                          phoneLabel.style.color = "green";
-                      }
-                  else if(!phoneFormat.test(phone.value) && (phone.value).length >= 1)
-                      {
-                           phoneLabel.style.color = "red";
+                           phoneError.style.display = "block";
                       }
                   else
                       {
-                          phoneLabel.style.color = "black";
+                          phoneError.style.display = "none";
                       }
               }
           }
